@@ -7,6 +7,6 @@ export async function getStaticProps() {
   const faq = await fetch(FAQ_API_URL).then(res => res.json());
 
   return {
-    props: { faq }, // will be passed to the page component as props
+    props: { faq }
   }
 }
